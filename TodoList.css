@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins", sans-serif;
+   box-sizing: border-box;
+}
+
+body {
+   background: skyblue;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.container {
+   width: 60%;
+   height: 60%;
+   position: absolute;
+   top: 20%;
+   left: 20%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   background: rgba(255, 255, 255, 0.4);
+   border-radius: 10px;
+}
+
+.top_head {
+   width: 80%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.inputter {
+   width: 85%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background: #edeef0;
+   border-radius: 30px;
+   padding-left: 20px;
+   margin-bottom: 25px;
+}
+
+.inputter input {
+   width: 90%;
+   border: none;
+   outline: none;
+   background: transparent;
+   padding: 15px 0;
+   font-size: 1.5rem;
+}
+
+.inputter span {
+   height: 55px;
+   width: 55px;
+   cursor: pointer;
+   border-radius: 40px;
+   box-sizing: border-box;
+   padding: 10px 0;
+   text-align: center;
+   background: limegreen;
+   color: white;
+   font-size: 2rem;
+}
+
+.inputter span:hover{
+  background: green;
+}
+
+#alert_message {
+   width: 85%;
+   text-align: center;
+   font-size: 1rem;
+   color: green;
+}
+
+#Todocontainer {
+   width: 85%;
+   height: 70%;
+   overflow-y: scroll;
+   font-size: 18px;
+   padding: 10px;
+}
+
+.Todo-item {
+   width: 100%;
+   height: 10%;
+   font-size: 1.5rem;
+   padding: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background: #edeef0;
+   margin-bottom: 10px;
+   border-radius: 5px;
+}
+
+.Todo-item input,
+sapn {
+   display: inline-block;
+   width: 25px;
+   height: 25px;
+   padding: 0 10px;
+   margin-right: 5px;
+}
+
+.Todo-item input:checked {
+   background: limegreen;
+   border-color: limegreen;
+}
+
+.Todo-item input:checked+p {
+   text-decoration: line-through;
+   display: inline-block;
+   width: 80%;
+   overflow-x: scroll;
+}
+
+.Todo-item input:checked~.edit-button {
+   visibility: hidden;
+}
+
+.Todo-item p {
+   display: inline-block;
+   width: 80%;
+   height: 25px;
+   overflow-x: scroll;
+}
+
+.Todo-item input {
+   appearance: none;
+   border: 2px solid red;
+   border-radius: 30%;
+   background-color: white;
+   transition: all 0.3s ease;
+   cursor: pointer;
+   position: relative;
+}
+
+.edit-button{
+  padding-right: 5px;
+}

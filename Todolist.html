@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="TodoList.css" type="text/css" media="all" />
+  
+</head>
+
+<body>
+  <div class="container">
+
+    <!--    top section   -->
+    <div class="top_head">
+      <h2>ToDo List</h2>
+      <img src="https://i.postimg.cc/0ywT9Qvt/checklist.png" width="25px" />
+    </div>
+
+    <!-- input section-->
+    <div class="inputter">
+      <input type="text" id="todoInput" placeholder="Enter Your Todo Item...">
+      <span onclick="todoItemCreator(this.previousElementSibling)"><i class="fas fa-plus"></i></span>
+    </div>
+
+    <!-- alert_message -->
+    <h5 id="alert_message">Welcome To ToDo List...</h5>
+
+    <!-- shows output todos -->
+    <div id="Todocontainer"></div>
+  </div>
+  
+  <script src="ToDoScript.js" type="text/javascript" charset="utf-8"></script>
+  
+</body>
+
+</html>
